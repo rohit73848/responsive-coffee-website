@@ -6,6 +6,8 @@
     <title>Coffee Website</title>
     <!-- Link Font Awesome For Icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Link Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -123,8 +125,55 @@
                 </ul>
             </div>
           </section>
-    </main>
+          <!-- Testimonials Section -->
+          <section class="testimonials-section">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Subham Ghosh</h3>
+                                <i class="feedback">"Best coffee shop I've visited, the ambiance and drinks were absolutely outstanding!"</i>
+                            </li>
+                            
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-2.jpg" alt="User" class="user-image">
+                                <h3 class="name">Rahit Biswas</h3>
+                                <i class="feedback"> "Their cappuccino is perfection in a cup, I come here every single morning!"</i>
+                            </li>
 
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Amit Ghosh</h3>
+                                <i class="feedback">"Friendly staff, cozy atmosphere and the most delicious coffee I've ever tasted!"</i>
+                            </li>
+
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Saikat Mondal</h3>
+                                <i class="feedback">"Special combo deal is totally worth it, great food and amazing drinks together!"</i>
+                            </li>
+
+                            <li class="testimonials swiper-slide">
+                                <img src="images/user-5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Shreya Biswas</h3>
+                                <i class="feedback">"Every sip feels like pure magic, this place has completely stolen my heart!"</i>
+                            </li>
+                        </ul>
+
+                         <div class="swiper-pagination"></div>
+                         <div class="swiper-button-prev swiper-slide-button"></div>
+                         <div class="swiper-button-next swiper-slide-button"></div>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <!-- Linking Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Linking Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>
