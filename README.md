@@ -99,6 +99,6 @@ A modern coffee shop landing page with interactive sections and responsive desig
 
 ## 👨‍💻 Author
 
-**Rohit Biswas**
+**Rahit Biswas**
 
-If you like this project, don't forget to ⭐ the repository.
+🌟 This project is open source. Feel free to explore, use, and don't forget to ⭐ the repository!
