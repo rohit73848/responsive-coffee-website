@@ -39,6 +39,9 @@
     /* Website Max Width  */
     --site-max-width: 1300px;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* Styling For Whole Site  */
 ul{
     list-style: none;
@@ -274,6 +277,7 @@ header .navbar{
     overflow: hidden;
 }
 .testimonials-section .testimonials{
+    user-select: none;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -394,6 +398,35 @@ header .navbar{
     color: var(--primary-color);
 }
 
+/* Footer Section Styling */
+.footer-section{
+    background: var(--dark-color);
+    padding: 20px 0;
+}
+.footer-section .section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section :where(.copyright-text, .social-link, .policy-link){
+    color: var(--white-color);
+    transition: 0.2s ease;
+}
+.footer-section .social-link-list{
+    display: flex;
+    gap: 25px;
+}
+.footer-section .social-link-list .social-link{
+    font-size: var(--font-size-l);
+}
+.footer-section .social-link-list .social-link:hover, .footer-section .policy-text .policy-link:hover{
+    color: var(--secondary-color);
+}
+.footer-section .policy-text .separator{
+    color: var(--white-color);
+    margin: 0 5px;
+}
+
  /* Responsive media query code for max width 1024px */
  @media screen and (max-width: 1024px) {
     .menu-section .menu-list{
@@ -481,7 +514,7 @@ header .navbar{
     }
     /* About Section */
     .about-section .section-content{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 70px;
     }
     .about-section .about-image-wrapper .about-image{
@@ -530,5 +563,10 @@ header .navbar{
     }
     .testimonials-section .swiper-slide-button{
         display: none;
+    }
+
+    .footer-section .section-content{
+        flex-direction: column;
+        gap: 20px;
     }
 }

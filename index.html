@@ -21,22 +21,22 @@
 
                 <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
                 <button id="menu-open-button" class="fas fa-bars"></button>
@@ -44,7 +44,7 @@
     </header>
     <main>
         <!-- Hero Section  -->
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="section-content">
                 <div class="hero-details">
                     <h2 class="title">Best Coffee</h2>
@@ -63,7 +63,7 @@
         </section>
 
         <!-- About Section  -->
-         <section class="about-section">
+         <section class="about-section" id="about">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="images/about-image.jpg" alt="about" class="about-image">
@@ -82,7 +82,7 @@
          </section>
 
          <!-- Menu Section -->
-          <section class="menu-section">
+          <section class="menu-section" id="menu">
             <h2 class="section-title">Our Menu</h2>
             <div class="section-content">
                 <ul class="menu-list">
@@ -126,7 +126,7 @@
             </div>
           </section>
           <!-- Testimonials Section -->
-          <section class="testimonials-section">
+          <section class="testimonials-section" id="testimonials">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
                 <div class="slider-container swiper">
@@ -134,7 +134,7 @@
                         <ul class="testimonials-list swiper-wrapper">
                             <li class="testimonials swiper-slide">
                                 <img src="images/user-1.jpg" alt="User" class="user-image">
-                                <h3 class="name">Subham Ghosh</h3>
+                                <h3 class="name">Shreya Biswas</h3>
                                 <i class="feedback">"Best coffee shop I've visited, the ambiance and drinks were absolutely outstanding!"</i>
                             </li>
                             
@@ -152,13 +152,13 @@
 
                             <li class="testimonials swiper-slide">
                                 <img src="images/user-4.jpg" alt="User" class="user-image">
-                                <h3 class="name">Saikat Mondal</h3>
+                                <h3 class="name">Puja Das</h3>
                                 <i class="feedback">"Special combo deal is totally worth it, great food and amazing drinks together!"</i>
                             </li>
 
                             <li class="testimonials swiper-slide">
                                 <img src="images/user-5.jpg" alt="User" class="user-image">
-                                <h3 class="name">Shreya Biswas</h3>
+                                <h3 class="name">Saikt Mondal</h3>
                                 <i class="feedback">"Every sip feels like pure magic, this place has completely stolen my heart!"</i>
                             </li>
                         </ul>
@@ -172,7 +172,7 @@
           </section>
 
           <!-- Gallery Section -->
-           <section class="gallery-section">
+           <section class="gallery-section" id="gallery">
             <h2 class="section-title">Gallery</h2>
             <div class="section-content">
                 <ul class="gallery-list">
@@ -199,7 +199,7 @@
            </section>
            
            <!-- Contact Section -->
-            <section class="contact-section">
+            <section class="contact-section" id="contact">
                 <h2 class="section-title">Contact Us</h2>
                 <div class="section-content">
                     <ul class="contact-info-list">
@@ -243,6 +243,24 @@
                     </form>
                 </div>
             </section>
+
+
+        <!-- Footer Section -->
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copyright-text">© 2026 Coffee Shop</p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>                 
+                    </div>
+                    <p class="policy-text">
+                        <a href="#" class="policy-link">Privacy Policy</a>
+                        <span class="separator">•</span>
+                        <a href="#" class="policy-link">Refund Policy</a>
+                    </p>
+                </div>
+            </footer>
     </main>
     <!-- Linking Swiper Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
