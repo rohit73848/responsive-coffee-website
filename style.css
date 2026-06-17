@@ -14,6 +14,7 @@
     --primary-color: #3b141c;
     --secondary-color: #f3961c;
     --light-pink-color: #f5e6d3;
+    --light-green-color: #f7ede0;
     --medium-gray-color: #ccc;
 
     /* Font Size */
@@ -38,7 +39,7 @@
     /* Website Max Width  */
     --site-max-width: 1300px;
 }
-/* Styling FOr Whole Site  */
+/* Styling For Whole Site  */
 ul{
     list-style: none;
 }
@@ -56,7 +57,7 @@ img{
 }
 .section-title{
     text-align: center;
-    padding: 60px 0 100px;
+    padding: 60px 0 70px;
     text-transform: uppercase;
     font-size: var(--font-size-xl);
 }
@@ -310,9 +311,33 @@ header .navbar{
     color: var(--primary-color);
 }
 
+/* Gallery Section Styling */
+.gallery-section{
+    padding: 50px 0 100px;
+    background: var(--light-green-color);
+}
+.gallery-section .gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.gallery-section .gallery-list .gallery-item{
+    width: calc(100% / 3 - 32px);
+    border-radius: var(--border-radius-s);
+    overflow: hidden;
+}
+.gallery-section .gallery-item .gallery-image{
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    transition: 0.3s ease;
+}
+.gallery-section .gallery-item:hover .gallery-image{
+    transform: scale(1.3);
+}
+
 
  /* Responsive media query code for max width 1024px */
-
  @media screen and (max-width: 1024px) {
     .menu-section .menu-list{
         gap: 60px;
@@ -420,6 +445,12 @@ header .navbar{
     .menu-section .menu-list .menu-item .menu-image{
         max-width: 200px;
     }
+    .gallery-section .gallery-list{
+        gap: 30px;
+    }
+    .gallery-section .gallery-list .gallery-item{
+        width: calc(100% / 2 - 30px);
+    }
 }
 
  /* Responsive media query code for max width 640px */
@@ -427,7 +458,7 @@ header .navbar{
     .menu-section .menu-list{
         gap: 60px;
     }
-    .menu-section .menu-list .menu-item{
+    .menu-section .menu-list .menu-item ,.gallery-section .gallery-list .gallery-item{
         width: 100%;
     }
     .testimonials-section .slider-wrapper{
